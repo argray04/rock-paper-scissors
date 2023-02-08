@@ -1,12 +1,16 @@
 
 //Write a function that randomly returns rock, paper, or scissors
 
-getComputerChoice(); {
+ComputerChoice(); {
     const choices = ["rock", "paper", "scissors"];
     get(index)  
-}
-let ComputerChoice = getComputerChoice();
+    let computer = ComputerChoice();}
 
+playerChoice = String(prompt("enter a choice"));
+let player = playerChoice
+rockPaperScissors();{
+        player + computer
+}
 
 //write a function that plays a single round of Rock, Paper, Scissors. 
 //Should take playerSelection and computer Selection, then return
