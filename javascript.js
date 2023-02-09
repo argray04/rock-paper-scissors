@@ -1,17 +1,31 @@
 
 //Write a function that randomly returns rock, paper, or scissors
 
-ComputerChoice(); {
+function ComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
-    get(index)  
-    let computer = ComputerChoice();}
+    
+    let index = Math.floor(Math.random()*3);
+    console.log(index);
+    let computer = choices[index];
 
-playerChoice = String(prompt("enter a choice"));
-let player = playerChoice
-rockPaperScissors();{
-        player + computer
+    return computer;
+
+}
+console.log(ComputerChoice());
+
+function playerSelection(){
+        playerChoice = String(prompt("enter a choice")).toLowerCase();
+        return playerChoice;
 }
 
+playerSelection();
+console.log(playerChoice);
+function rockPaperScissors(){
+  if (computer == playerChoice){
+        alert("That's a draw!");
+  }
+}
+rockPaperScissors();
 //write a function that plays a single round of Rock, Paper, Scissors. 
 //Should take playerSelection and computer Selection, then return
 // You win or lose!
