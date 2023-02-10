@@ -11,19 +11,21 @@ function ComputerChoice() {
     return computer;
 
 }
-console.log(ComputerChoice());
+// console.log(ComputerChoice());
 
 function playerSelection(){
         playerChoice = String(prompt("enter a choice")).toLowerCase();
         return playerChoice;
 }
 
-playerSelection();
-console.log(playerSelection());
+// playerSelection();
+// console.log(playerSelection());
 function rockPaperScissors(){
 
   let computer = ComputerChoice();
-  let playerChoice = playerSelection();      
+  let playerChoice = playerSelection(); 
+  console.log(computer);
+  console.log(playerChoice);
   if (computer == playerChoice){
         alert("That's a draw!");
   }
