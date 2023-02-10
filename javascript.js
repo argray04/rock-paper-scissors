@@ -19,13 +19,35 @@ function playerSelection(){
 }
 
 playerSelection();
-console.log(playerChoice);
+console.log(playerSelection());
 function rockPaperScissors(){
+
+  let computer = ComputerChoice();
+  let playerChoice = playerSelection();      
   if (computer == playerChoice){
         alert("That's a draw!");
   }
+  if(computer == "rock" & playerChoice=="paper"){
+        alert("You win!");
+  }
+  if(computer == "rock" & playerChoice=="scissors"){
+        alert("You lose!");
+  }
+  if(computer == "paper" & playerChoice=="rock"){
+        alert("You lose!");
+  }
+  if(computer == "paper" & playerChoice=="scissors"){
+        alert("You win!");
+  }
+  if(computer == "scissors" & playerChoice=="paper"){
+        alert("You lose!");
+  }
+  if(computer == "scissors" & playerChoice=="rock"){
+        alert("You win!");
+  }
 }
 rockPaperScissors();
+
 //write a function that plays a single round of Rock, Paper, Scissors. 
 //Should take playerSelection and computer Selection, then return
 // You win or lose!
